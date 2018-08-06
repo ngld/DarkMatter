@@ -1,7 +1,7 @@
-### A work-in-progress collection of quality themes for use with [BetterDiscord](https://betterdiscord.net)
-
-*All themes go into %AppData%\BetterDiscord\themes*
-
 ##### Dark Matter | *A cold, dark & frosty theme.*
 
-![Alt text](/dm-ss.jpg?raw=true "Optional Title")
+The theme goes into `%AppData%\BetterDiscord\themes` or `%AppData%\discord\<version>\modules\discord_desktop_core\discord-custom.css` if you use [bd](BeautifulDiscord) with default settings.
+
+![Screenshot](/dm-ss.jpg?raw=true)
+
+[bd]: https://github.com/leovoel/BeautifulDiscord

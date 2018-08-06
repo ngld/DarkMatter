@@ -1,29 +1,12 @@
 [
   {
-    "name": "Dark Matter",
+    "name": "Dark Matter (ngld fixes)",
     "type": "theme",
-    "src": "themes/DarkMatter",
-    "version": "1.4",
+    "src": ".",
+    "version": "2.1",
     "authors": [
-      "Hammock"
-    ]
-  },
-  {
-    "name": "Transparent",
-    "type": "theme",
-    "src": "themes/Transparent",
-    "version": "1.0",
-    "authors": [
-      "Hammock"
-    ]
-  },
-  {
-    "name": "Replyer",
-    "type": "plugin",
-    "src": "plugins/Replyer",
-    "version": "1.0",
-    "authors": [
-      "Hammock"
+      "Hammock",
+      "ngld"
     ]
   }
 ]
