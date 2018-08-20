@@ -62,6 +62,13 @@ textarea {
 	background-color: rgba(0,0,0,0.3) !important;
 }
 
+/* The dark background for the channel list scrollbar looks ugly since it breaks the even line
+   between channels and content. The scrollbar is visible enough without a background so we
+   just remove it there. */
+.channels-Ie2l6A .scrollerWrap-2lJEkd .scroller-2FKFPG::-webkit-scrollbar-track-piece {
+    background: transparent !important;
+}
+
 
 /*
  _     _     _      
@@ -101,7 +108,7 @@ textarea {
 .channels-Ie2l6A,
 .private-channels,
 .header-2o-2hj header,
-.divider-red span,
+.dividerRed-MKoLlr span,
 .messagesWrapper-3lZDfY,
 #rtc-connection,
 #voice-connection {
@@ -1016,29 +1023,29 @@ textarea {
 	color:var(--main-color) !important;
 }
 
-.chat-3bRxxu .divider {
+.chat-3bRxxu .divider-3gKybi {
 	height:25px;
 	background:none;
 }
 
-.chat-3bRxxu .divider>div {
+.chat-3bRxxu .divider-3gKybi>div {
 	display:none !important;
 }
-.chat-3bRxxu .divider:not(.divider-red)>div {
+.chat-3bRxxu .divider-3gKybi:not(.dividerRed-MKoLlr)>div {
 	background:rgba(255,255,255,0.2) !important;
 }
 
-.chat-3bRxxu .divider:before {
+.chat-3bRxxu .divider-3gKybi:before {
 	background:rgba(255,255,255,0.06) !important;
 	height:25px;
 	border-radius: 3px;
 }
 
-.chat-3bRxxu .divider.divider-red:before {
+.chat-3bRxxu .divider-3gKybi.dividerRed-MKoLlr:before {
 	background: rgba(240,71,71,.8) !important;
 }
 
-.chat-3bRxxu .divider>span {
+.chat-3bRxxu .divider-3gKybi>span {
 	background-color:transparent !important;
 	font-size:12px;
 	text-transform:uppercase;
@@ -1051,15 +1058,15 @@ textarea {
 	text-align: center;
 }
 
-.chat-3bRxxu .divider.divider-red>span {
+.chat-3bRxxu .divider-3gKybi.dividerRed-MKoLlr>span {
 	color: rgba(255,255,255,0.9) !important;
 }
 
-.chat-3bRxxu .divider:not(.divider-red)>span {
+.chat-3bRxxu .divider-3gKybi:not(.dividerRed-MKoLlr)>span {
 	color:rgba(255,255,255,1) !important;
 }
 
-.chat-3bRxxu .divider>div {
+.chat-3bRxxu .divider-3gKybi>div {
 	display:none;
 }
 
@@ -1281,11 +1288,7 @@ textarea {
 	margin-right: 5px;
 }
 
-#friends {
-	background: transparent !important;
-}
-
-#friends .headerBar-UHpsPw {
+.activityFeed-28jde9 .headerBar-UHpsPw {
 	background: rgba(0,0,0,0.95) !important;
 }
 
@@ -1864,15 +1867,15 @@ textarea {
 	background: var(--main-color);
 }
 
-.content-yTz4x3-region .CodeMirror, 
-.content-yTz4x3-region .cm-s-material .CodeMirror-gutters, 
+.content-region .CodeMirror, 
+.content-region .cm-s-material .CodeMirror-gutters, 
 #bd-customcss-detach-container .CodeMirror, 
 #bd-customcss-detach-container .cm-s-material .CodeMirror-gutters {
 	background: rgba(0, 0, 0, 0.5)!important;
 	border-radius: 5px;
 }
 
-.content-yTz4x3-region #bd-customcss-attach-controls, 
+.content-region #bd-customcss-attach-controls, 
 #bd-customcss-detach-container #bd-customcss-attach-controls {
 	background: rgba(0, 0, 0, 0.8)!important;
 	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1) inset;
@@ -1929,7 +1932,7 @@ textarea {
 	padding: 10px 15px 10px 15px;
 }
 
-.content-yTz4x3-region .CodeMirror-scroll {
+.content-region .CodeMirror-scroll {
 	padding-top: 10px;
 }
 
@@ -2058,8 +2061,8 @@ textarea {
 	background: rgba(0,0,0,0.7) !important;
 }
 
-.ui-standard-sidebar-view .content-yTz4x3-region,
-.ui-standard-sidebar-view .content-yTz4x3-region .scrollbar {
+.ui-standard-sidebar-view .content-region,
+.ui-standard-sidebar-view .content-region .scrollbar {
 	background: rgba(0,0,0,0.8) !important;
 }
 
