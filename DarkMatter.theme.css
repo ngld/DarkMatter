@@ -130,6 +130,9 @@ textarea {
 /* Game area */
 .activityFeed-28jde9 { background:rgba(0,0,0,0.8) !important }
 
+/* Store */
+.applicationStore-1pNvnv { background:rgba(0,0,0,0.8) !important }
+
 /*
  _              _ _   _           
 | |_ ___   ___ | | |_(_)_ __  ___ 
@@ -1275,7 +1278,8 @@ textarea {
 	margin-right: 5px;
 }
 
-.activityFeed-28jde9 .headerBar-UHpsPw {
+.activityFeed-28jde9 .headerBar-UHpsPw,
+.applicationStore-1pNvnv .headerBar-UHpsPw {
 	background: rgba(0,0,0,0.95) !important;
 }
 
@@ -1300,6 +1304,26 @@ textarea {
 
 .friends-table .friends-row:hover {
 	background: rgba(0,0,0,0.7) !important;
+}
+
+/*
+     _                         _
+ ___| |_ ___  _ __ ___  __   _(_) _____      __
+/ __| __/ _ \| '__/ _ \ \ \ / / |/ _ \ \ /\ / /
+\__ \ || (_) | | |  __/  \ V /| |  __/\ V  V /
+|___/\__\___/|_|  \___|   \_/ |_|\___| \_/\_/
+
+*/
+
+.searchBox-3Y2Vi7 {
+	background: rgba(255,255,255,0.1) !important;
+}
+
+
+.itemBackground-1jfD8p:before {
+	background: radial-gradient(ellipse at top,transparent,#111),
+		-webkit-gradient(linear,left top,right top,from(#111),color-stop(40%,transparent),color-stop(60%,transparent),to(#111)),
+		-webkit-gradient(linear,left bottom,left top,from(#111),color-stop(25%,transparent)) !important;
 }
 
 /*
@@ -1729,7 +1753,7 @@ textarea {
 	border-bottom: 1px solid rgba(255,255,255,0.1) !important;
 }
 
-.ui-standard-sidebar-view .bda-slist li:nth-child(odd) {
+.standardSidebarView-3F1I7i .bda-slist li:nth-child(odd) {
 	border-top: none !important;
 }
 
@@ -1768,7 +1792,7 @@ textarea {
 	background: var(--main-color);
 }
 
-.ui-standard-sidebar-view .bda-slist .bda-right button {
+.standardSidebarView-3F1I7i .bda-slist .bda-right button {
 	height: 24px;
 	width: auto;
 	padding: 0 11px;
@@ -1777,7 +1801,7 @@ textarea {
 	transition: background 100ms ease-in-out;
 }
 
-.ui-standard-sidebar-view .bda-slist .bda-right button:hover {
+.standardSidebarView-3F1I7i .bda-slist .bda-right button:hover {
 	background: var(--main-color);
 }
 
@@ -1798,7 +1822,7 @@ textarea {
 	color: var(--main-color);
 }
 
-.ui-standard-sidebar-view .bda-slist .bda-description {
+.standardSidebarView-3F1I7i .bda-slist .bda-description {
 	border: none !important;
 	min-height: auto;
 	max-height: 80px;
@@ -1854,15 +1878,15 @@ textarea {
 	background: var(--main-color);
 }
 
-.content-region .CodeMirror, 
-.content-region .cm-s-material .CodeMirror-gutters, 
+.contentRegion-3nDuYy .CodeMirror, 
+.contentRegion-3nDuYy .cm-s-material .CodeMirror-gutters, 
 #bd-customcss-detach-container .CodeMirror, 
 #bd-customcss-detach-container .cm-s-material .CodeMirror-gutters {
 	background: rgba(0, 0, 0, 0.5)!important;
 	border-radius: 5px;
 }
 
-.content-region #bd-customcss-attach-controls, 
+.contentRegion-3nDuYy #bd-customcss-attach-controls, 
 #bd-customcss-detach-container #bd-customcss-attach-controls {
 	background: rgba(0, 0, 0, 0.8)!important;
 	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1) inset;
@@ -1876,7 +1900,7 @@ textarea {
 	align-items: center;
 }
 
-.ui-standard-sidebar-view #bd-customcss-attach-controls button, 
+.standardSidebarView-3F1I7i #bd-customcss-attach-controls button, 
 .bd-detached-css-editor #bd-customcss-attach-controls button {
 	width: auto !important;
 	border-radius: 3px !important;
@@ -1910,7 +1934,7 @@ textarea {
 	background-color: rgba(0,0,0,1);
 }
 
-#bd-customcss-detach-container .ui-standard-sidebar-view #bd-customcss-attach-controls button, 
+#bd-customcss-detach-container .standardSidebarView-3F1I7i #bd-customcss-attach-controls button, 
 #bd-customcss-detach-container .bd-detached-css-editor #bd-customcss-attach-controls button {
 	padding: 5px 7px;
 }
@@ -1919,7 +1943,7 @@ textarea {
 	padding: 10px 15px 10px 15px;
 }
 
-.content-region .CodeMirror-scroll {
+.contentRegion-3nDuYy .CodeMirror-scroll {
 	padding-top: 10px;
 }
 
@@ -2039,17 +2063,17 @@ textarea {
 	background: var(--main-color);
 }
 
-.ui-standard-sidebar-view {
+.standardSidebarView-3F1I7i {
 	background: transparent !important;
 }
 
-.ui-standard-sidebar-view .sidebar-region,
-.ui-standard-sidebar-view .sidebar-region .scrollbar {
+.standardSidebarView-3F1I7i .sidebarRegion-VFTUkN,
+.standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .scrollbar {
 	background: rgba(0,0,0,0.7) !important;
 }
 
-.ui-standard-sidebar-view .content-region,
-.ui-standard-sidebar-view .content-region .scrollbar {
+.standardSidebarView-3F1I7i .contentRegion-3nDuYy,
+.standardSidebarView-3F1I7i .contentRegion-3nDuYy .scrollbar {
 	background: rgba(0,0,0,0.8) !important;
 }
 
