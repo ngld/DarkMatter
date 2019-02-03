@@ -27,7 +27,7 @@
 */
 
 /* Main background and settings background */
-.app,
+.app-19_DXt,
 .callout-backdrop {
 	background: url(https://i.imgur.com/7SbtKvw.png) !important;
 	background-size: cover !important;
@@ -122,7 +122,7 @@ textarea {
 .channels-Ie2l6A { background:rgba(0,0,0,0.7) !important }
 
 /* Chat area */
-.content-yTz4x3 .flex-spacer { background:rgba(0,0,0,0.8) }
+.content-yTz4x3 > .flex-1O1GKY { background:rgba(0,0,0,0.8) }
 
 /* User list area */
 .members-1998pB { background:rgba(0,0,0,0.9) !important }
