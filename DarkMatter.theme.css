@@ -6,15 +6,20 @@
 	Change these to modify dark matter's colors.
  */
 
-:root {
+:root, .theme-dark {
 	--main-color: rgba(37,172,232,1);
 	--main-color-faded: rgba(37,172,232,0.2);
 	--accent-color: rgba(29,101,134,1);
 	--dark-color: #161921;
+	--channels-default: rgba(255,255,255,0.6);
 
 	/* Modal Background Color / Opacity */
 	--short-gradient: linear-gradient(45deg, rgba(29,101,134,0.5), rgba(37,172,232,0.5));
 	--short-gradient-faded: linear-gradient(45deg, rgba(29,101,134,0.1), rgba(37,172,232,0.1));
+	--deprecated-panel-background: rgba(0,0,0,0.95);
+
+	--background-primary: rgba(0, 0, 0, 0.9);
+	--background-secondary: rgba(0, 0, 0, 0.3);
 }
 
 /*
@@ -63,7 +68,7 @@ textarea {
 /* The dark background for the channel list scrollbar looks ugly since it breaks the even line
    between channels and content. The scrollbar is visible enough without a background so we
    just remove it there. */
-.channels-Ie2l6A .scrollerWrap-2lJEkd .scroller-2FKFPG::-webkit-scrollbar-track-piece {
+.scrollerWrap-2lJEkd .scroller-2FKFPG::-webkit-scrollbar-track-piece {
     background: transparent !important;
 }
 
@@ -82,11 +87,11 @@ textarea {
 	display: none;
 }
 
-.layers,
+.layers-3iHuyZ,
 .container-PNkimc,
 .container-2lgZY8,
-.theme-dark .layers-3iHuyZ,
-.theme-dark .chat-3bRxxu form {
+.theme-dark,
+.theme-dark .layers-3iHuyZ {
 	background: transparent !important;
 }
 
@@ -389,7 +394,6 @@ textarea {
 .container-2td-dC,
 .container-1aNBdK,
 .homeButton-2Cw51C,
-.circleIconButton-jET_ig,
 .svg-1X37T1,
 .wrapper-25eVIn {
 	width:40px;
@@ -431,6 +435,10 @@ textarea {
 
 .homeIcon-tEMBK1 path {
     display: none;
+}
+
+[aria-label="Home"] .childWrapper-anI2G9 {
+	background: transparent !important;
 }
 
 .container-2td-dC.audio .guildInner-3DSoA4:after {
@@ -536,6 +544,11 @@ textarea {
  \___|_| |_|\__,_|_| |_|_| |_|\___|_|___/ |___/\___|\___|\__|_|\___/|_| |_|
 
 */
+
+.sidebar-2K8pFh  {
+	background: rgba(0,0,0,0.75) !important;
+	border-radius: 0 !important;
+}
 
 .base-3dtUhz {
 	border-radius: 0 !important;
@@ -1026,7 +1039,7 @@ textarea {
 }
 
 .chat-3bRxxu .divider-3gKybi>span:before, .chat-3bRxxu .divider-3gKybi>span:after {
-	border: 0px;
+	background: transparent;
 }
 
 .chat-3bRxxu .divider-3gKybi.dividerRed-MKoLlr>span {
@@ -1055,7 +1068,8 @@ textarea {
 }
 
 .chat-3bRxxu form {
-	border-top: none !important;
+	margin: 0;
+	background: var(--deprecated-panel-background);
 }
 
 .messages-3amgkR .message-group:not(.has-divider) {
@@ -1964,7 +1978,7 @@ textarea {
 .form-deprecated .form-inner,
 .wrapper-1Rf91z .instantInviteModal-3vhcvC .form-actions,
 .wrapper-1Rf91z .instantInviteModalAdvanced-3qJETM .form-actions {
-	background: var(--dark-color) !important;
+	background: var(--deprecated-panel-background) !important;
 }
 
 .form-deprecated .Select-control .Select-arrow {
