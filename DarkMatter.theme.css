@@ -20,6 +20,9 @@
 
 	--background-primary: rgba(0, 0, 0, 0.9);
 	--background-secondary: rgba(0, 0, 0, 0.3);
+	--background-tertiary: rgba(0, 0, 0, 0.95);
+
+	--channeltextarea-background: rgba(0, 0, 0, 0.6);
 }
 
 /*
@@ -32,11 +35,14 @@
 */
 
 /* Main background and settings background */
-.app-19_DXt,
+.bg-h5JY_x,
 .callout-backdrop {
 	background: url(https://i.imgur.com/7SbtKvw.png) !important;
 	background-size: cover !important;
 }
+
+/* Don't cover the title bar */
+.bg-h5JY_x { top: 0 !important; }
 
 /*
 						   _                           _       
@@ -109,9 +115,9 @@ textarea {
 .typing-2GQL18,
 .content-yTz4x3,
 .private-channels,
-.header-2o-2hj header,
 .dividerRed-MKoLlr span,
 .messagesWrapper-3lZDfY,
+.messages-3amgkR,
 .friendsTable-133bsv,
 .headerBar-UHpsPw,
 #rtc-connection,
@@ -137,8 +143,7 @@ textarea {
 /* Game area */
 .activityFeed-28jde9 { background:rgba(0,0,0,0.8) !important }
 
-/* Store */
-.applicationStore-1pNvnv { background:rgba(0,0,0,0.8) !important }
+.header-2o-2hj { background: var(--background-tertiary); }
 
 /*
  _              _ _   _           
@@ -545,6 +550,10 @@ textarea {
 
 */
 
+.searchBar-6Kv8R2 {
+	background: var(--background-tertiary);
+}
+
 .sidebar-2K8pFh  {
 	background: rgba(0,0,0,0.75) !important;
 	border-radius: 0 !important;
@@ -919,11 +928,10 @@ textarea {
 	box-shadow: none !important;
 }
 
-.header-2BwW8b-2o-2hj {
+.chat-3bRxxu .video-1FfuMD {
 	border-bottom: 0px solid rgba(0,0,0,0.3) !important;
 	background: rgba(0,0,0,0.15) !important;
 	box-shadow: none !important;
-	height: 49px !important;
 }
 
 .header-2BwW8b-toolbar button.active {
@@ -1178,13 +1186,8 @@ textarea {
 	font-size: 0.85rem;
 }
 
-.channel-textarea-upload {
-	border-right-color: hsla(0,0%,100%,.1) !important;
-}
-
-.channel-textarea-inner {
+.channelTextArea-rNsIhG .inner-zqa7da {
 	border: 2px solid rgba(255,255,255,0.1) !important;
-	background:rgba(0,0,0,0.6) !important;
 }
 
 .channel-textarea-autocomplete-inner {
@@ -1312,26 +1315,6 @@ textarea {
 
 .friends-table .friends-row:hover {
 	background: rgba(0,0,0,0.7) !important;
-}
-
-/*
-     _                         _
- ___| |_ ___  _ __ ___  __   _(_) _____      __
-/ __| __/ _ \| '__/ _ \ \ \ / / |/ _ \ \ /\ / /
-\__ \ || (_) | | |  __/  \ V /| |  __/\ V  V /
-|___/\__\___/|_|  \___|   \_/ |_|\___| \_/\_/
-
-*/
-
-.searchBox-3Y2Vi7 {
-	background: rgba(255,255,255,0.1) !important;
-}
-
-
-.itemBackground-1jfD8p:before {
-	background: radial-gradient(ellipse at top,transparent,#111),
-		-webkit-gradient(linear,left top,right top,from(#111),color-stop(40%,transparent),color-stop(60%,transparent),to(#111)),
-		-webkit-gradient(linear,left bottom,left top,from(#111),color-stop(25%,transparent)) !important;
 }
 
 /*
@@ -1972,6 +1955,7 @@ textarea {
 */
 
 .wrapper-1Rf91z,
+.wrapper-29NfPK,
 .modal-3HD5ck,
 .footer-2yfCgX,
 .form-deprecated .form-header,
