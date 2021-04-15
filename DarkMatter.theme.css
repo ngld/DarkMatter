@@ -1,6 +1,15 @@
-/*//META{"name":"Dark_Matter","description":"A cold, dark & frosty theme","author":"Hammock (CosmicSalad), fixes by ngld","version":"2.1.0"}* //{} */
-/* @import url(https://fonts.googleapis.com/css?family=Karla); */
-@import url(https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700);
+/**
+ * @name         Dark_Matter
+ * @description  A cold, dark & frosty theme
+ * @donate       
+ * @source       https://github.com/ngld/DarkMatter/blob/master/DarkMatter.theme.css
+ * @invite       
+ * @author       Hammock (CosmicSalad), fixes by ngld
+ * @version      2.1.0 
+ */
+ 
+ @import url(https://fonts.googleapis.com/css?family=Karla);
+ @import url(https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700);
 
 /* 	
 	MAIN VARS
